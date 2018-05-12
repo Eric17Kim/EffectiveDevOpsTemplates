@@ -37,7 +37,7 @@ ApplicationPort = "8080"
 GithubAccount = "Eric17Kim"
 GithubAnsibleURL = "https://github.com/{}/ansible".format(GithubAccount)
 
-AnsiblePullCmd = "/usr/local/bin/ansible-pull -U {}.yml -i localhost".format(GithubAnsibleURL, ApplicationName)
+AnsiblePullCmd = "/usr/local/bin/ansible-pull -U {} {}.yml -i localhost".format(GithubAnsibleURL, ApplicationName)
 
 PublicCidrIp = str(ip_network(get_ip()))
 
